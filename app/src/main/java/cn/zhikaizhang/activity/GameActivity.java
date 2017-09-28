@@ -324,11 +324,11 @@ public class GameActivity extends Activity {
 
         String msg = "";
         if(winOrLoseOrDraw > 0){
-            msg = "你击败了" + NAME_OF_AI[difficulty - 1];
+            msg = "You beat level " + NAME_OF_AI[difficulty - 1];
         }else if(winOrLoseOrDraw == 0){
-            msg = "平局";
+            msg = "Draw";
         }else if(winOrLoseOrDraw < 0){
-            msg = "你被" + NAME_OF_AI[difficulty - 1] + "击败了";
+            msg = "Leve " + NAME_OF_AI[difficulty - 1] + " beat you";
         }
         msgDialog = new MessageDialog(GameActivity.this, msg);
         msgDialog.show();
